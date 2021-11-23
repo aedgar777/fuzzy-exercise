@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="@color/white"
+    android:outlineProvider="none"
+    android:padding="2dp"
+    app:cardCornerRadius="20dp">
+
+    <ImageView
+        android:id="@+id/thumbIv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_transparent"
+        android:orientation="vertical"
+        android:paddingStart="10dp">
+
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.1"
+            android:maxLines="4"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="Movie Title" />
+
+        <TextView
+            android:id="@+id/releaseYearTv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            tools:text="2017 " />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
